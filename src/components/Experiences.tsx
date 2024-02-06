@@ -1,11 +1,31 @@
-import React from "react";
+import {
+  fadingChildrenMotion,
+  fadingExpStaggerMotion,
+  fromLeftMotion,
+} from "@/lib/motions";
+import { motion } from "framer-motion";
 
 const Experiences = () => {
   return (
     <div className="bio flex flex-col justify-center gap-12 pb-48">
-      <h2 className="font-bold text-2xl justify-center">EXPERIENCES</h2>
-      <div className="itemlists">
-        <div className="items flex flex-row justify-between h-48">
+      <motion.h2
+        variants={fromLeftMotion}
+        initial="initial"
+        whileInView="whileInView"
+        className="font-bold text-2xl justify-center"
+      >
+        EXPERIENCES
+      </motion.h2>
+      <motion.div
+        variants={fadingExpStaggerMotion}
+        initial="initial"
+        whileInView="whileInView"
+        className="itemlists"
+      >
+        <motion.div
+          variants={fadingChildrenMotion}
+          className="items flex flex-row justify-between h-48"
+        >
           <div className="left flex-[2]">
             <h2 className="bg-white w-fit p-3 font-semibold rounded-lg">
               Frontend Developer Freelancer
@@ -24,9 +44,12 @@ const Experiences = () => {
             </div>
           </div>
           <div className="right flex-[2] "></div>
-        </div>
+        </motion.div>
 
-        <div className="items flex flex-row-reverse justify-between h-48">
+        <motion.div
+          variants={fadingChildrenMotion}
+          className="items flex flex-row-reverse justify-between h-48"
+        >
           <div className="left flex-[2]">
             <h2 className="bg-white w-fit p-3 font-semibold rounded-lg">
               After Sales & PPIC
@@ -48,10 +71,13 @@ const Experiences = () => {
             </div>
           </div>
           <div className="right flex-[2] "></div>
-        </div>
+        </motion.div>
 
         {/* Jobs 2 */}
-        <div className="items flex flex-row-reverse justify-between h-48">
+        <motion.div
+          variants={fadingChildrenMotion}
+          className="items flex flex-row-reverse justify-between h-48"
+        >
           <div className="right flex-[2] "></div>
           <div className="center flex-[1] flex justify-center">
             <div className="line w-px h-full bg-gray-700 rounded relative">
@@ -74,8 +100,8 @@ const Experiences = () => {
               Sugity Creatives
             </h4>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

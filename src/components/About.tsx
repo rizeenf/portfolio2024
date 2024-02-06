@@ -1,8 +1,23 @@
+"use client";
+import { fadingMotion, fromLeftMotion } from "@/lib/motions";
+import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="bio flex flex-col justify-center gap-12">
-      <h2 className="font-bold text-2xl justify-center">ABOUT</h2>
-      <div className="text-lg">
+      <motion.h2
+        variants={fromLeftMotion}
+        initial="initial"
+        whileInView={"whileInView"}
+        className="font-bold text-2xl justify-center"
+      >
+        ABOUT
+      </motion.h2>
+      <motion.div
+        variants={fadingMotion}
+        initial="initial"
+        whileInView={"whileInView"}
+        className="text-lg"
+      >
         <p>
           I've been working with some frontend technologies such as React.js,
           Next.js, Tailwind and others.
@@ -14,11 +29,21 @@ const About = () => {
           I'm reliable person, motivated and able to adapt quickly to new
           technologies and exploring new things.
         </p>
-      </div>
-      <span className="italic">
+      </motion.div>
+      <motion.span
+        variants={fadingMotion}
+        initial="initial"
+        whileInView={"whileInView"}
+        className="italic"
+      >
         As long as you live keep learning how to live
-      </span>
-      <div className="self-end">
+      </motion.span>
+      <motion.div
+        variants={fadingMotion}
+        initial="initial"
+        whileInView={"whileInView"}
+        className="self-end"
+      >
         <svg
           width="155"
           height="54"
@@ -33,7 +58,7 @@ const About = () => {
             stroke-linecap="round"
           />
         </svg>
-      </div>
+      </motion.div>
     </div>
   );
 };

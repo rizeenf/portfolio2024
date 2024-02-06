@@ -73,3 +73,7 @@
     border-radius: 31% 69% 38% 62% / 44% 56% 44% 56%;
   }
 }
+
+*::-webkit-scrollbar {
+  width: 0px;
+}

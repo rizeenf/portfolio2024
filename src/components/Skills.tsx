@@ -1,4 +1,10 @@
-import React from "react";
+"use client";
+import {
+  fadingChildrenMotion,
+  fadingStaggerMotion,
+  fromLeftMotion,
+} from "@/lib/motions";
+import { motion } from "framer-motion";
 
 const SKILLS = [
   "JavaScript",
@@ -19,17 +25,30 @@ const SKILLS = [
 const Skills = () => {
   return (
     <div className="skill flex flex-col justify-center gap-12">
-      <h2 className="font-bold text-2xl justify-center">SKILLS</h2>
-      <div className="flex flex-wrap gap-4">
+      <motion.h2
+        variants={fromLeftMotion}
+        initial="initial"
+        whileInView="whileInView"
+        className="font-bold text-2xl justify-center"
+      >
+        SKILLS
+      </motion.h2>
+      <motion.div
+        variants={fadingStaggerMotion}
+        initial="initial"
+        whileInView="whileInView"
+        className="flex flex-wrap gap-4"
+      >
         {SKILLS.map((item) => (
-          <span
+          <motion.span
+            variants={fadingChildrenMotion}
             key={item}
             className="rounded p-3 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
           >
             {item}
-          </span>
+          </motion.span>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

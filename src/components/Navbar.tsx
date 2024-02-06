@@ -11,6 +11,7 @@ import {
   TwitterIcon,
 } from "lucide-react";
 import NavbarLink from "./NavbarLink";
+import { botVar, cenVar, linkVar, listVariants, topVar } from "@/lib/motions";
 
 const LIST_MENU = [
   { label: "Home", href: "/" },
@@ -40,58 +41,6 @@ const SOCIAL = [
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-
-  const topVar = {
-    close: {
-      rotate: 0,
-    },
-    open: {
-      rotate: -45,
-      backgroundColor: "rgb(255,255,255)",
-    },
-  };
-  const cenVar = {
-    close: {
-      opacity: 1,
-    },
-    open: {
-      opacity: 0,
-    },
-  };
-  const botVar = {
-    close: {
-      rotate: 0,
-    },
-    open: {
-      rotate: 45,
-      backgroundColor: "rgb(255,255,255)",
-    },
-  };
-
-  const listVariants = {
-    close: {
-      y: "-100vh",
-    },
-    open: {
-      y: 0,
-      transition: {
-        duration: 0.4,
-        delayChildren: 0.2,
-        staggerChildren: 0.15,
-      },
-    },
-  };
-
-  const linkVar = {
-    close: {
-      y: -30,
-      opacity: 0,
-    },
-    open: {
-      y: 0,
-      opacity: 1,
-    },
-  };
 
   return (
     <WidthWrapper>
@@ -126,7 +75,7 @@ const Navbar = () => {
 
         {/* BUTTON */}
         <button
-          className="w-8 h-4 flex flex-col items-center justify-between z-20 md:hidden"
+          className="w-8 h-4 flex flex-col items-center justify-between z-50 md:hidden"
           onClick={() => setIsMenuOpen((prev) => !prev)}
         >
           <motion.div
@@ -153,7 +102,7 @@ const Navbar = () => {
           variants={listVariants}
           initial="close"
           animate="open"
-          className="h-screen w-screen bg-black absolute top-0 left-0 text-white flex items-center justify-center flex-col gap-5 text-3xl z-10"
+          className="h-screen w-screen bg-black absolute top-0 left-0 text-white flex items-center justify-center flex-col gap-5 text-3xl z-40"
         >
           {LIST_MENU.map((list) => (
             <motion.div variants={linkVar} key={list.href}>
