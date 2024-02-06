@@ -57,7 +57,7 @@ export default function Home() {
             }}
           >
             <h1 className="flex flex-row flex-wrap justify-center gap-3 text-4xl font-extrabold text-center">
-              Hi there! I'm{" "}
+              Hi there! I&apos;m{" "}
               <span className="flex flex-row gap-3 tracking-wide text-orange-600">
                 Rizki
                 <motion.div
@@ -78,7 +78,7 @@ export default function Home() {
               </span>
             </h1>
             <h1 className="mt-1 text-lg text-center">
-              I'm a Frontend Web developer based in Bekasi, Indonesia
+              I&apos;m a Frontend Web developer based in Bekasi, Indonesia
             </h1>
             <div className="flex items-center justify-center gap-5 mt-5 text-center">
               <button className="p-2 rounded-md ring-1 ring-black bg-black text-white">

@@ -19,14 +19,14 @@ const About = () => {
         className="text-lg"
       >
         <p>
-          I've been working with some frontend technologies such as React.js,
-          Next.js, Tailwind and others.
+          I&apos;ve been working with some frontend technologies such as
+          React.js, Next.js, Tailwind and others.
         </p>
         <p>
           My educational background as an Information Technology college student
         </p>
         <p>
-          I'm reliable person, motivated and able to adapt quickly to new
+          I&apos;m reliable person, motivated and able to adapt quickly to new
           technologies and exploring new things.
         </p>
       </motion.div>
