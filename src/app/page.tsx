@@ -37,6 +37,7 @@ export default function Home() {
             fill
             src={"/me.jpeg"}
             alt="Image Profil"
+            loading="eager"
             className="object-cover imageBlob"
           />
         </motion.div>

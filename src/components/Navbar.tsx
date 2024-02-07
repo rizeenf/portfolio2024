@@ -54,7 +54,11 @@ const Navbar = () => {
 
         {/* LOGO */}
         <div className="flex-1 flex md:hidden lg:flex sm:justify-center items-center ">
-          <Link href={"/"} className="flex items-center justify-center">
+          <Link
+            href={"/"}
+            className="flex items-center justify-center"
+            aria-label="RizkiNrp"
+          >
             <span className="font-semibold text-lg italic">RizkiNrp</span>
           </Link>
         </div>
@@ -65,6 +69,7 @@ const Navbar = () => {
             <Link
               href={list.href}
               target="_blank"
+              aria-label={list.label}
               key={list.href}
               className="items-center flex"
             >

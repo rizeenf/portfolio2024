@@ -122,12 +122,22 @@ const Portfolio = () => {
                     {item.desc}
                   </p>
                   <div className="flex justify-between">
-                    <Link href={item.src} target="_blank" className="self-end">
+                    <Link
+                      href={item.src}
+                      target="_blank"
+                      aria-label={item.name}
+                      className="self-end"
+                    >
                       <Button variant={"outline"} size={"lg"}>
                         <GithubIcon size={18} /> Source code
                       </Button>
                     </Link>
-                    <Link href={item.demo} target="_blank" className="self-end">
+                    <Link
+                      href={item.demo}
+                      target="_blank"
+                      aria-label={item.name}
+                      className="self-end"
+                    >
                       <Button variant={"outline"} size={"lg"}>
                         See Demo &rarr;
                       </Button>
@@ -141,7 +151,11 @@ const Portfolio = () => {
       </div>
       <div className="h-screen w-screen flex gap-20 flex-col items-center justify-center bg-gradient-to-b to-blue-100 from-orange-50">
         <h1 className="text-4xl mb-5 text-center">Do you have any project?</h1>
-        <Link href={"/contact"} className="relative -ml-16">
+        <Link
+          href={"/contact"}
+          className="relative -ml-16"
+          aria-label="Contact me"
+        >
           <Loader2 className="h-36 w-36 absolute animate-spin -top-6 -left-6" />
           <div className="h-24 w-24 absolute z-10 top-0 left-0 bottom-0 right-0 rounded-full bg-black text-white flex items-center justify-center text-sm hover:opacity-70 cursor-pointer">
             Contact me

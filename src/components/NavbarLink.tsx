@@ -11,6 +11,7 @@ const NavbarLink = ({ list }: { list: { href: string; label: string } }) => {
     <Link
       href={list.href}
       key={list.href}
+      aria-label={list.label}
       className={cn(
         "rounded-md py-1 px-2",
         pathname === list.href && "bg-black text-white "
