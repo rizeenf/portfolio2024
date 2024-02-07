@@ -2,6 +2,7 @@
 import WidthWrapper from "@/components/WidthWrapper";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -82,12 +83,20 @@ export default function Home() {
               I&apos;m a Frontend Web developer based in Bekasi, Indonesia
             </h1>
             <div className="flex items-center justify-center gap-5 mt-5 text-center">
-              <button className="p-2 rounded-md ring-1 ring-black bg-black text-white">
+              <Link
+                href={"/projects"}
+                className="p-2 rounded-md ring-1 ring-black bg-black text-white hover:bg-white hover:text-black"
+              >
                 Projects
-              </button>
-              <button className="p-2 rounded-md ring-1 ring-black ">
+              </Link>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1c--YL19wz1EjEo0AjzqJXfCtCgs7StzI/view?usp=sharing"
+                }
+                className="p-2 rounded-md ring-1 ring-black hover:bg-black hover:text-white hover:ring-white hover:ring-2"
+              >
                 Resume
-              </button>
+              </Link>
             </div>
           </motion.div>
         </div>
