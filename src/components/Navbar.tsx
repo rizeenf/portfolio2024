@@ -107,11 +107,11 @@ const Navbar = () => {
           variants={listVariants}
           initial="close"
           animate="open"
-          className="h-screen w-screen bg-black absolute top-0 left-0 text-white flex items-center justify-center flex-col gap-5 text-3xl z-40"
+          className="h-screen w-screen bg-black absolute top-0 left-0 text-white flex items-center justify-center flex-col gap-5 text-3xl z-50"
         >
           {LIST_MENU.map((list) => (
             <motion.div variants={linkVar} key={list.href}>
-              <Link href={list.href} className="hover:text-gray-800">
+              <Link href={list.href} className="hover:text-gray-800 ">
                 {list.label}
               </Link>
             </motion.div>
