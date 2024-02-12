@@ -87,6 +87,7 @@ const Contact = () => {
             className="p-2 bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
             minLength={10}
+            required
           />
           <span>My email address is</span>
           <input
@@ -94,6 +95,7 @@ const Contact = () => {
             name="user_email"
             className="p-2 bg-transparent border-b-2 border-b-black outline-none resize-none"
             placeholder="yourmail@example.com"
+            required
           />
           <span>Best Regards</span>
           <Button type="submit" className="w-full" variant={"outline"}>
