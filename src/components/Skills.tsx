@@ -1,4 +1,5 @@
 "use client";
+import { SKILLS } from "@/lib/constants";
 import {
   fadingChildrenMotion,
   fadingStaggerMotion,
@@ -6,21 +7,6 @@ import {
 } from "@/lib/motions";
 import { motion } from "framer-motion";
 
-const SKILLS = [
-  "JavaScript",
-  "TypeScript",
-  "React.js",
-  "Next.js",
-  "TailwindCSS",
-  "SCSS",
-  "Bootstrap",
-  "MySQL",
-  "Redux",
-  "Framer Motion",
-  "Git",
-  "HTML5",
-  "CSS",
-];
 
 const Skills = () => {
   return (
