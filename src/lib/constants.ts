@@ -1,9 +1,9 @@
 export const EXPERIENCES = [
   {
-    title: 'React Developer',
-    description: `Built and maintained responsive web applications using ReactJS for the frontend and Node.js for the backend.`,
-    date: 'Feb 2024 - Presents',
-    company: 'IFCA Indonesia'
+    title: 'Full Stack React Developer',
+    description: `Developed and maintained multiple responsive web applications using React.js with TypeScript for the frontend and Node.js for the backend. Implemented GraphQL APIs to optimize data fetching and improve performance. Collaborated with cross-functional teams to design scalable architectures, integrate third-party services, and ensure smooth deployment across multiple projects.`,
+    date: 'Feb 2024 - Present',
+    company: 'IFCA Indonesia 365'
   },
   {
     title: 'Frontend Developer Freelancer',
@@ -30,13 +30,19 @@ export const SKILLS = [
   "TypeScript",
   "React.js",
   "Next.js",
-  "MySQL",
+  "Node.js",
+  "express",
+  "Azure DevOps",
+  "Azure AD",
+  "Docker"
   "PostgreSQL",
+  "MySQL",
   "GraphQL",
+  "REST API"
   "TailwindCSS",
   "SCSS",
   "Bootstrap",
-  "Redux",
+  "Redux Toolkit",
   "Framer Motion",
   "Git",
   "HTML5",
@@ -46,6 +52,32 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     id: 1,
+    link: "https://absence-five.vercel.app/",
+    img: "/projJfest1.png",
+    img2: "/projJfest2.png",
+    img3: "/projJfest3.png",
+    name: "IFCAbsence | Absence System",
+    desc: "This system automates attendance tracking by using facial recognition technology. It captures an image of each person’s face, identifies them using a trained database, and records their attendance automatically. This reduces manual errors, saves time, and ensures accurate and secure attendance management.",
+    framework: "Next.js, React, Tailwind, Redux, ",
+    demo: "https://absence-five.vercel.app/",
+    src: "https://github.com/rizeenf/absence",
+    color: "from-blue-50 to-orange-50",
+  },
+  {
+    id: 2,
+    link: "https://martabak-madness.vercel.app/",
+    img: "/projChatapp2.png",
+    img2: "/projChatapp2.png",
+    img3: "/projChatapp2.png",
+    name: "MartabakMadness | Food Delivery Apps",
+    desc: "A convenient app that lets users instantly order their favorite meals from nearby restaurants. Users can quickly sign in using their Google account and enjoy fast, hassle-free food delivery.",
+    framework: "React, Tailwind, Supabase Auth, Stripe",
+    demo: "https://martabak-madness.vercel.app/",
+    src: "https://github.com/rizeenf/martabak-madness",
+    color: "from-orange-50 to-violet-50",
+  },
+  {
+    id: 3,
     link: "myjfest.up.railway.app",
     img: "/projJfest1.png",
     img2: "/projJfest2.png",
@@ -58,7 +90,7 @@ export const PROJECTS = [
     color: "from-blue-50 to-orange-50",
   },
   {
-    id: 2,
+    id: 4,
     link: "rize-chatreact-firebase.vercel.app",
     img: "/projChatapp2.png",
     img2: "/projChatapp2.png",
@@ -71,7 +103,7 @@ export const PROJECTS = [
     color: "from-orange-50 to-violet-50",
   },
   {
-    id: 3,
+    id: 5,
     link: "rize-socialmedia.vercel.app",
     img: "/projSocialmed2.jpeg",
     img2: "/projSocialmed2.jpeg",
@@ -84,7 +116,7 @@ export const PROJECTS = [
     color: "from-violet-50 to-red-50",
   },
   {
-    id: 4,
+    id: 6,
     link: "https://zashboard.vercel.app",
     img: "/projZashboard2.png",
     img2: "/projZashboard2.png",
