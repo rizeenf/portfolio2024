@@ -34,7 +34,7 @@ export const SKILLS = [
   "express",
   "Azure DevOps",
   "Azure AD",
-  "Docker"
+  "Docker",
   "PostgreSQL",
   "MySQL",
   "GraphQL",
