@@ -38,7 +38,7 @@ export const SKILLS = [
   "PostgreSQL",
   "MySQL",
   "GraphQL",
-  "REST API"
+  "REST API",
   "TailwindCSS",
   "SCSS",
   "Bootstrap",
